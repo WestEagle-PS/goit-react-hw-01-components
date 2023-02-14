@@ -3,13 +3,11 @@ import FriendsListItem from './FriendListItem';
 
 function FriendList({ friends = [] }) {
   return (
-    <>
-      <ul className="friend-list">
-        {friends.map(friend => (
-          <FriendsListItem key={friend.id} {...friend} />
-        ))}
-      </ul>
-    </>
+    <ul className="friend-list">
+      {friends.map(friend => (
+        <FriendsListItem key={friend.id} {...friend} />
+      ))}
+    </ul>
   );
 }
 
