@@ -11,10 +11,15 @@
 }
 
 .status {
-    background: green;
+    background-color: green;
     border-radius: 50%;
     height: 20px;
     width: 20px;
+}
+
+.offline {
+    composes: status;
+    background-color: red;
 }
 
 .name {

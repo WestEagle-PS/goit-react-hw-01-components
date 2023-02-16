@@ -5,7 +5,7 @@ function TransactionHistory({ items }) {
   return (
     <table className={css.transactionHistory}>
       <thead>
-        <tr className={CSS.thead}>
+        <tr>
           <th className={css.tHeadRow}>Type</th>
           <th className={css.tHeadRow}>Amount</th>
           <th className={css.tHeadRow}>Currency</th>

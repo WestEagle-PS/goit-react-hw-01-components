@@ -21,24 +21,3 @@
     padding: 18px 28px 18px;
     text-align: center;
 }
-
-.tHeadRow {
-    padding-top: 22px;
-    text-shadow: 1px 1px 1px #fff;
-    background: #e8eaeb;
-}
-
-.tDateRow {
-    border-top: 1px solid #e0e0e0;
-    border-right: 1px solid #e0e0e0;
-}
-
-.tDateRow.first,
-.tHeadRow.first {
-    text-align: left
-}
-
-.tHeadRow {
-    background-color: linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
-    background-color: gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
-}
