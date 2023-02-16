@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 
 import Profile from './components/Profile/Profile';
 import user from './data/user.json';
@@ -15,27 +15,19 @@ import transactions from './data/transactions.json';
 function App() {
   return (
     <>
-      <section>
-        <Profile
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-          followers={user.stats.followers}
-          views={user.stats.views}
-          likes={user.stats.likes}
-        />
-      </section>
-      <section>
-        <Statistics title="Upload stats" items={data} />
-        {/* <Statistics items={data} /> */}
-      </section>
-      <section>
-        <FriendList friends={friends} />
-      </section>
-      <section>
-        <TransactionHistory items={transactions} />;
-      </section>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
+      <Statistics title="Upload stats" stats={data} />
+      {/* <Statistics items={data} /> */}
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }
